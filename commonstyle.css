@@ -1,0 +1,16 @@
+.bgmap{
+    background: url("/assets/background@1x.png");
+    border-radius: 12px;
+    width: 640px;
+    height: 330px;
+    background-position: center;
+    background-size: 1340px;
+    background-position-y: -446px;
+    background-position-x: -254px;
+}
+
+.listitem{
+    width: 234px;
+    height: 80px;
+    border-radius: 13px;
+}

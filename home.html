@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="commonstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Yavar</title>
+    <script src="https://kit.fontawesome.com/86d7cd08fd.js" crossorigin="anonymous"></script>
+    <style>
+        ul li {
+            font-family: 'Lobster', cursive;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 14px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="height:136vh;">
+        <div class="row gutter-x-0" style="height: auto;padding: 0px;margin: 0px;">
+            <div class="col-lg-3 col-md-3 col-sm-12  container-fluid" style="height: 136vh;padding: 0px;margin: 0px;">
+                <ul style="width: 20%;height:auto;margin: 0px;padding: 0px;"
+                    class="nav flex-column dropdown-menu bg-light rounded-5 ">
+                    <li class="nav-item my-3">
+                        <a class="nav-link d-flex justify-content-left p-3 " aria-current="page" href="#">
+                            <img class="w-75 h-50" src="./assets/Yavar-ai.png" alt="">
+                            <img class="w-10 h-25 m-4" src="./assets/Expand Icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link active" href="#">
+                            <img src="/assets/carbon_dashboard.png" alt="">
+                            <span style="padding-left:20px;font-weight: bold;">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/gis_location-poi-o.png" alt="">
+                            <span style="padding-left:20px;">Location</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/iconoir_industry.png" alt="">
+                            <span style="padding-left:20px;">Industry</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/Group 237284.png" alt="">
+                            <span style="padding-left:20px;">Customer</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/Group.png" alt="">
+                            <span style="padding-left:20px;">Storage</span>
+                            <span class="badge rounded-pill bg-danger float-end">10</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/carbon_meter.png" alt="">
+                            <span style="padding-left:20px;">Level Meters</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/Vector.png" alt="">
+                            <span style="padding-left:20px;">Flow Meters</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/Group-3.png" alt="">
+                            <span style="padding-left:20px;">Billing Cycle</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2 ">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/Vector-1.png" alt="">
+                            <span style="padding-left:20px;">Bills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav item d-flex justify-content-left ps-2 my-2">
+                        <span class="text-dark" style="font-weight: bolder;">Account</span>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/Group-3.png" alt="">
+                            <span style="padding-left:20px;">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-3">
+                        <a class="nav-link" href="#">
+                            <img src="/assets/Group-2.png" alt="">
+                            <span style="padding-left:20px;font-weight: bolder;color: red;">Log-out</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 container-fluid mb-1" style="height: 136vh;">
+                <div class="container-fluid col-lg-9 col-md-9 col-sm-12" style="width:100%;">
+                    <div style="width: 960px;height: 60px;" class="row bg-light mt-1 rounded-pill">
+                        <form class="d-flex align-items-center ms-2">
+                            <input class="form-control form-control-sm  w-75" type="text" placeholder="Search">
+                            <img class="ps-3" src="/assets/Notification Icon.png" alt="">
+                            <div class="col d-flex justify-content-end me-4">
+                                <i style="font-size: 30px;color: grey;" class="fa fa-duotone fa-circle pe-1"></i>
+                                <span style="font-size:13px;font-weight:bold;" class="">Ola Boluwatife<br><span
+                                        style="font-size: 11px;font-weight:lighter;" class="text-primary">Super
+                                        Admin</span></span>
+                                <i class="fa fa-solid fa-angle-down ps-2 pt-1"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-fluid col-lg-9 col-md-9 col-sm-12" style="width:100%;">
+                    <div class="row">
+                        <div class="col">
+                            <h5 style="color: red;font-weight: bold;">Welcome Boluwatife ,</h5>
+                            <p style="font-size: 12px;">How're you feeling today?</p>
+                        </div>
+                        <div class="col m-1 d-flex justify-content-end">
+                            <img style="height: 22px;width: 22px;" src="assets/Contrast.png">
+                            <img class="ps-4" width="16%" height="33%" src="assets/Toggle Button.png" alt=""><span
+                                class="ps-2" style="font-size: 12px;">Apply Dark Theme</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" style="width:100%;padding: 0px;margin: 0px;">
+                    <div class="row m-1">
+                        <div class="bgmap" style="width: 74%;height: 345px;">
+                            <!-- <iframe src="assets/background@1x.png" width="650px" height="100%" frameborder="0" style="border-radius:9px;"></iframe> -->
+                            <div class="float-center m-5">
+                                <img src="assets/Pin-2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/Pin-1.png" alt="">
+                            </div>
+                            <div class="float-end">
+                                <img src="assets/Group 237283.png" alt="">
+                            </div> 
+                        </div>
+                        <div style="width: 26%;">
+                            <div class="list-group">
+                                <div style="background-color: #d8f2f1;" class="listitem m-1">
+                                    <img class="pt-3" src="assets/Rectangle 6228.png">
+                                    <img class="ms-4" src="assets/Icon.png" alt="">
+                                    <span class="col">
+                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">2</span>
+                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-1.png" alt="">
+                                    </span>
+
+                                </div>
+                                <div style="background-color: #fff6e9  ;" class="listitem m-1">
+                                    <img class="pt-3" src="assets/Rectangle 6228-1.png">
+                                    <img class="ms-4" src="assets/Icon-1.png" alt="">
+                                    <span class="col">
+                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">3</span>
+                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-2.png" alt="">
+                                    </span>
+
+                                </div>
+                                <div style="background-color: #ffe9dc;" class="listitem m-1">
+                                    <img class="pt-3" src="assets/Rectangle 6228-2.png">
+                                    <img class="ms-4" src="assets/Incon.png" alt="">
+                                    <span class="col">
+                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">0
+                                            M<sup>3</sup></span>
+                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-3.png" alt=""><br>
+                                    </span>
+                                </div>
+                                <div style="background-color: #e4dcf1;" class="listitem">
+                                    <img class="pt-3" src="assets/Rectangle 6228-3.png">
+                                    <img class="ms-4" src="assets/Icon-2.png" alt="">
+                                    <span class="col">
+                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">0
+                                            M<sup>3</sup></span>
+                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-4.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row container-fluid mt-1" style="width: 100%;margin: 0px;padding: 0px;">
+                    <div class="card col-lg-7 container-fluid" style="margin-left:0px !important;width: 631px;"
+                        style="padding: 0px;margin: 0px;">
+                        <div class="card-header">
+                            <div class="row">
+                                <form class="col">
+                                    <input class="form-control form-control-sm  w-75" type="text" placeholder="Search">
+                                </form>
+                                <div class="col btn-group btn-group-sm" role="group"
+                                    aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-danger" for="btnradio1">Parks</label>
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-danger" for="btnradio2">Location</label>
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-danger" for="btnradio3">Devices</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <img class="col" width="20px" height="25px" src="/assets/Vector (12).svg" alt=""
+                                            style="padding-left: 0px;padding-right: 0px;">
+                                        <span class="col"
+                                            style="font-size: 11px;font-weight: bold;">Irungatukottai</span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="assets/la_industry.png"
+                                                alt="">2<br>Industries
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png"
+                                                alt="">2<br>Storages
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt="">2<br>Flow
+                                            Meters
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png"
+                                                alt="">2<br>Level Meters
+                                        </span>
+                                        <span class="col" style="margin: 0px;padding: 0px;">
+                                            <i class="fa fa-solid fa-angle-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <img class="col" width="20px" height="25px" src="/assets/Vector (10).svg" alt=""
+                                            style="padding-left: 0px;padding-right: 0px;">
+                                        <span class="col" style="font-size: 11px;font-weight: bold;">Perundurai</span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="assets/la_industry.png"
+                                                alt="">2<br>Industries
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png"
+                                                alt="">2<br>Storages
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt="">2<br>Flow
+                                            Meters
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png"
+                                                alt="">2<br>Level Meters
+                                        </span>
+                                        <span class="col" style="margin: 0px;padding: 0px;">
+                                            <i class="fa fa-solid fa-angle-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <img class="col" width="20px" height="25px" src="/assets/Vector (11).svg" alt=""
+                                            style="padding-left: 0px;padding-right: 0px;">
+                                        <span class="col" style="font-size: 11px;font-weight: bold;">Tamil Nadu</span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="assets/la_industry.png"
+                                                alt="">2<br>Industries
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png"
+                                                alt="">2<br>Storages
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt="">2<br>Flow
+                                            Meters
+                                        </span>
+                                        <span class="col" style="font-size: 9px;">
+                                            <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png"
+                                                alt="">2<br>Level Meters
+                                        </span>
+                                        <span class="col" style="margin: 0px;padding: 0px;">
+                                            <i class="fa fa-solid fa-angle-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" style="font-size: 11px;width: 120px;"
+                                    class="btn btn-outline-danger rounded-pill mt-2">See All</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container-fluid col-lg-5 col-md-5 col-sm-12" style="width:340px;">
+                        <img src="assets/Level Map.svg" width="340px" height="320px">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/js/dist/base-component.js"></script>
+</body>
+
+</html>
