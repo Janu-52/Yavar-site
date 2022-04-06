@@ -2,320 +2,387 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="commonstyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="commonstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@200;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
     <title>Yavar</title>
     <script src="https://kit.fontawesome.com/86d7cd08fd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #ffffff;
+        }
+
         ul li {
-            font-family: 'Lobster', cursive;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 14px;
             color: black;
+        }
+
+        .toggle.ios,
+        .toggle-on.ios,
+        .toggle-off.ios {
+            border-radius: 20rem;
+        }
+
+        .toggle.ios .toggle-handle {
+            border-radius: 20rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid" style="height:116vh;">
-        <div class="row gutter-x-0" style="height: auto;padding: 0px;margin: 0px;">
-            <div class="col-lg-3 col-md-3 col-sm-12  container-fluid" style="height: 116vh;padding: 0px;margin: 0px;">
-                <ul style="width: 20%;height:auto;margin: 0px;padding: 0px;"
-                    class="nav flex-column dropdown-menu bg-light rounded-5 mt-1 ">
-                    <li class="nav-item my-1">
-                        <a class="nav-link d-flex justify-content-left p-3 " aria-current="page" href="#">
-                            <img class="w-75 h-50" src="./assets/Yavar-ai.png" alt="">
-                            <img class="w-10 h-25 m-4" src="./assets/Expand Icon.png" alt="">
+    <div class="container-fluid" style="height: 116vh">
+        <div class="row gutter-x-0" style="height: auto; padding: 0px; margin: 0px">
+            <div class="col-lg-2 col-md-2 col-sm-2 container-fluid" style="height: 116vh; padding: 0px; margin: 0px">
+                <ul style="
+                width: 270px;
+                height: auto;
+                margin: 0px;
+                padding: 0px;
+                border-radius: 20px;
+                font-size: 12px;
+                color: #343434;" class="nav flex-column dropdown-menu bg-light rounded-5 mt-1 hoverable">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-left" aria-current="page" href="#">
+                            <img src="./assets/Yavar-ai.png" alt="" height="54px" width="171px" />
+                            <img class="w-10 h-25 m-4" src="./assets/Expand Icon.png" alt="" />
                         </a>
                     </li>
                     <li>
-                        <hr class="dropdown-divider">
+                        <hr class="dropdown-divider" style="width: 268px" />
                     </li>
-                    <li class="nav-item my-1">
-                        <a class="nav-link active" href="#">
-                            <img src="/assets/carbon_dashboard.png" alt="">
-                            <span style="padding-left:20px;font-weight: bold;">Dashboard</span>
+                    <li class="nav-item my-3">
+                        <a class="nav-link text-dark" href="#">
+                            <img src="/assets/carbon_dashboard.png" alt="" />
+                            <span style="padding-left: 20px">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/gis_location-poi-o.png" alt="">
-                            <span style="padding-left:20px;">Location</span>
+                            <img src="/assets/gis_location-poi-o.png" alt="" />
+                            <span style="padding-left: 20px">Location</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/iconoir_industry.png" alt="">
-                            <span style="padding-left:20px;">Industry</span>
+                            <img src="/assets/iconoir_industry.png" alt="" />
+                            <span style="padding-left: 20px">Industry</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/Group 237284.png" alt="">
-                            <span style="padding-left:20px;">Customer</span>
+                            <img src="/assets/Group 237284.png" alt="" />
+                            <span style="padding-left: 20px">Customer</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/Group.png" alt="">
-                            <span style="padding-left:20px;">Storage</span>
+                            <img src="/assets/Group.png" alt="" />
+                            <span style="padding-left: 20px">Storage</span>
                             <span class="badge rounded-pill bg-danger float-end">10</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/carbon_meter.png" alt="">
-                            <span style="padding-left:20px;">Level Meters</span>
+                            <img src="/assets/carbon_meter.png" alt="" />
+                            <span style="padding-left: 20px">Level Meters</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/Vector.png" alt="">
-                            <span style="padding-left:20px;">Flow Meters</span>
+                            <img src="/assets/Vector.png" alt="" />
+                            <span style="padding-left: 20px">Flow Meters</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/Group-3.png" alt="">
-                            <span style="padding-left:20px;">Billing Cycle</span>
+                            <img src="/assets/Group-3.png" alt="" />
+                            <span style="padding-left: 20px">Billing Cycle</span>
                         </a>
                     </li>
-                    <li class="nav-item my-1 ">
+                    <li class="nav-item my-4">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/Vector-1.png" alt="">
-                            <span style="padding-left:20px;">Bills</span>
+                            <img src="/assets/Vector-1.png" alt="" />
+                            <span style="padding-left: 20px">Bills</span>
                         </a>
                     </li>
                     <li>
-                        <hr class="dropdown-divider">
+                        <hr class="dropdown-divider" style="width: 268px" />
                     </li>
-                    <li class="nav item d-flex justify-content-left ps-2 my-2">
-                        <span class="text-dark" style="font-weight: bolder;">Account</span>
+                    <li class="nav item d-flex justify-content-left ps-2 my-3">
+                        <span style="font-weight: 700; font-style: bold; color: #343434">Account</span>
                     </li>
-                    <li class="nav-item my-1">
+                    <li class="nav-item my-3">
                         <a class="nav-link text-dark" href="#">
-                            <img src="/assets/Group-3.png" alt="">
-                            <span style="padding-left:20px;">Settings</span>
+                            <img src="/assets/Group-3.png" alt="" />
+                            <span style="padding-left: 20px">Settings</span>
                         </a>
                     </li>
                     <li class="nav-item my-3">
                         <a class="nav-link" href="#">
-                            <img src="/assets/Group-2.png" alt="">
-                            <span style="padding-left:20px;font-weight: bolder;color: red;">Log-out</span>
+                            <img src="/assets/Group-2.png" alt="" />
+                            <span style="padding-left: 20px; font-weight: bolder; color: red">Log-out</span>
                         </a>
                     </li>
                 </ul>
-
-
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-12 container-fluid mb-1" style="height: 116vh;">
-                <div class="container-fluid col-lg-9 col-md-9 col-sm-12" style="width:100%;">
-                    <div style="width: 960px;height: 60px;" class="row bg-light mt-1 rounded-pill">
+            <div class="col-lg-9 col-md-9 col-sm-9 container-fluid mb-1" style="height: 116vh">
+                <div class="container-fluid col-lg-9 col-md-9 col-sm-12" style="width: 100%">
+                    <div style="width: 994px; height: 80px; border-radius: 20px" class="row bg-light mt-1">
                         <form class="d-flex align-items-center ms-2">
-                            <input class="form-control form-control-sm  w-75" type="text" placeholder="Search">
-                            <img class="ps-3" src="/assets/Notification Icon.png" alt="">
+                            <input class="form-control form-control-sm w-75" type="text" placeholder="Search"
+                                style="border-radius: 10px" />
+                            <img class="ps-3" src="/assets/Notification Icon.png" alt="" />
                             <div class="col d-flex justify-content-end me-4">
-                                <i style="font-size: 30px;color: grey;" class="fa fa-duotone fa-circle pe-1"></i>
-                                <span style="font-size:13px;font-weight:bold;" class="">Ola Boluwatife<br><span
-                                        style="font-size: 11px;font-weight:lighter;" class="text-primary">Super
-                                        Admin</span></span>
+                                <i style="font-size: 36px; color: #d6d6d6" class="fa fa-duotone fa-circle pe-1"></i>
+                                <span style="font-size: 12px; font-weight: bold" class="">Ola Boluwatife<br /><span
+                                    style="font-size: 10px;font-weight: 400, regular;color: #100db1;">Super Admin</span></span>
                                 <i class="fa fa-solid fa-angle-down ps-2 pt-1"></i>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="container-fluid col-lg-9 col-md-9 col-sm-12" style="width:100%;">
+                <div class="container-fluid col-lg-9 col-md-9 col-sm-12 mt-2" style="width: 100%">
                     <div class="row">
-                        <div class="col">
-                            <h5 style="color: red;font-weight: bold;">Welcome Boluwatife ,</h5>
-                            <p style="font-size: 12px;">How're you feeling today?</p>
+                        <div class="col-lg-8">
+                            <h5 style="color: red; font-weight: 700; font-size: 21px">
+                                Welcome Boluwatife ,
+                            </h5>
+                            <p style="font-size: 11px; font-weight: 400">
+                                How're you feeling today?
+                            </p>
                         </div>
-                        <div class="col m-1 d-flex justify-content-end">
-                            <img style="height: 22px;width: 22px;" src="assets/Contrast.png">
-                            <img class="ps-4" width="16%" height="33%" src="assets/Toggle Button.png" alt=""><span
-                                class="ps-2" style="font-size: 12px;">Apply Dark Theme</span>
+                        <div class="col-lg-3 m-1 ms-5 d-flex form-check form-switch float-end">
+                            <img style="height: 22px; width: 22px" src="assets/Contrast.png" />
+                            <input class="form-check-input ms-4 bg-dark" type="checkbox" id="flexSwitchCheckChecked"
+                                checked />
+                            <span class="ps-3 pt-1" style="font-size: 10px">Apply Dark Theme</span>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid" style="width:100%;padding: 0px;margin: 0px;">
+                <div class="container-fluid" style="width: 100%; padding: 0px; margin: 0px">
                     <div class="row m-1">
-                        <div class="bgmap" style="width: 74%;height: 345px;">
+                        <div class="bgmap" style="width: 73%; height: 502px">
                             <!-- <iframe src="assets/background@1x.png" width="650px" height="100%" frameborder="0" style="border-radius:9px;"></iframe> -->
-                            <div class="float-center m-5">
-                                <img src="assets/Pin-2.png" alt="">
+                            <div class="float-start mt-3">
+                                <input class="form-control form-control-sm" type="text" placeholder="Search"
+                                    style="border-radius: 10px; width: 352px" />
+                            </div>
+                            <!-- <div class="input-group col-md-4">
+                                <input class="form-control py-2" type="search" value="search" id="example-search-input">
+                                <span class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                </span>
+                            </div> -->
+                            <div class="float-center m-5 pt-4">
+                                <img src="assets/Pin-2.png" alt="" />
                             </div>
                             <div>
-                                <img src="assets/Pin-1.png" alt="">
+                                <img src="assets/Pin-1.png" alt="" />
                             </div>
-                            <div class="float-end">
-                                <img src="assets/Group 237283.png" alt="">
-                            </div> 
+                            <div style="margin-left: 140px">
+                                <img src="/assets/Pin.png" alt="" />
+                            </div>
+                            <div style="margin-left: 322px">
+                                <img src="/assets/PositionUtilisateur.png" alt="" />
+                            </div>
+                            <div class="float-end" style="margin-top: 66px">
+                                <img src="assets/Group 237283.png" alt="" />
+                            </div>
                         </div>
-                        <div style="width: 26%;">
-                            <div class="list-group">
-                                <div style="background-color: #d8f2f1;" class="listitem m-1">
-                                    <img class="pt-3" src="assets/Rectangle 6228.png">
-                                    <img class="ms-4" src="assets/Icon.png" alt="">
+                        <div style="width: 20%">
+                            <div class="list-group my-3">
+                                <div style=" background-color: rgba(91, 147, 255, 0.1); border-radius: 10px; width: 285px; height: 116px;" class="listitem m-1">
+                                    <img class="mt-4" src="assets/Rectangle 6228.png" />
+                                    <img class="ms-4" src="assets/Icon.png" alt="" />
                                     <span class="col">
-                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">2</span>
-                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-1.png" alt="">
+                                        <span class="ps-3" style="font-weight: bold; font-size: 20px">2</span>
+                                        <img class="float-end me-2 mt-5" src="./assets/Vector 1-1.png" alt="" />
                                     </span>
-
+                                    <span style="margin-left: 120px; font-size: 14px" class="row">Total Number of
+                                        <br />Parks</span>
                                 </div>
-                                <div style="background-color: #fff6e9  ;" class="listitem m-1">
-                                    <img class="pt-3" src="assets/Rectangle 6228-1.png">
-                                    <img class="ms-4" src="assets/Icon-1.png" alt="">
+                                <div style="
+                      background-color: rgba(255, 195, 39, 0.1);
+                      border-radius: 10px;
+                      width: 285px;
+                      height: 116px;
+                    " class="listitem m-1">
+                                    <img class="mt-4" src="assets/Rectangle 6228-1.png" />
+                                    <img class="ms-4" src="assets/Icon-1.png" alt="" />
                                     <span class="col">
-                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">3</span>
-                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-2.png" alt="">
+                                        <span class="ps-3" style="font-weight: bold; font-size: 20px">3</span>
+                                        <img class="float-end me-2 mt-5" src="./assets/Vector 1-2.png" alt="" />
                                     </span>
-
+                                    <span style="margin-left: 120px;margin-bottom: 10px;font-size: 14px;" class="row">Total Number of <br />Industries</span>
                                 </div>
-                                <div style="background-color: #ffe9dc;" class="listitem m-1">
-                                    <img class="pt-3" src="assets/Rectangle 6228-2.png">
-                                    <img class="ms-4" src="assets/Incon.png" alt="">
+                                <div style=" background-color: rgba(255, 143, 107, 0.1); border-radius: 10px;width: 285px;height: 116px;" class="listitem m-1">
+                                    <img class="mt-4" src="assets/Rectangle 6228-2.png" />
+                                    <img class="ms-4" src="assets/Incon.png" alt="" />
                                     <span class="col">
-                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">0
+                                        <span class="ps-3" style="font-weight: bold; font-size: 20px">0
                                             M<sup>3</sup></span>
-                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-3.png" alt=""><br>
+                                        <img class="float-end me-2 mt-5" src="./assets/Vector 1-3.png" alt="" /><br />
                                     </span>
+                                    <span style="margin-left: 120px; font-size: 14px" class="row">Water
+                                        Consumption</span>
                                 </div>
-                                <div style="background-color: #e4dcf1;" class="listitem">
-                                    <img class="pt-3" src="assets/Rectangle 6228-3.png">
-                                    <img class="ms-4" src="assets/Icon-2.png" alt="">
+                                <div style=" background-color: rgba(96, 91, 255, 0.1);border-radius: 10px;" class="listitem">
+                                    <img class="mt-4" src="assets/Rectangle 6228-3.png" />
+                                    <img class="ms-4 mt-1" src="assets/Icon-2.png" alt="" />
                                     <span class="col">
-                                        <span class="ps-3" style="font-weight: bold;font-size: 20px;">0
+                                        <span class="ps-3" style="font-weight: bold; font-size: 20px">0
                                             M<sup>3</sup></span>
-                                        <img class="float-end me-2  mt-4" src="./assets/Vector 1-4.png" alt="">
+                                        <img class="float-end me-2 mt-5" src="./assets/Vector 1-4.png" alt="" />
                                     </span>
+                                    <span style="margin-right: 4px; font-size: 14px" class="float-end me-5">Water
+                                        Wastage</span>
+                                    <!-- <img class="" src="./assets/Base-1.png" alt="" > -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row container-fluid mt-1" style="width: 100%;margin: 0px;padding: 0px;">
-                    <div class="card col-lg-7 container-fluid" style="margin-left:0px !important;width: 587px;height:218px;padding: 0px;margin: 0px;"
-                        style="padding: 0px;margin: 0px;">
+                <div class="row container-fluid mt-2" style="width: 100%; margin: 0px; padding: 0px">
+                    <div class="card col-lg-7 container-fluid" style="width: 584px;height: 248px;padding: 0px;margin: 0px;border-radius: 20px;" style="padding: 0px; margin: 0px">
                         <div class="card-header">
                             <div class="row">
-                                <form class="col">
-                                    <input class="form-control form-control-sm  w-75" type="text" placeholder="Search">
+                                <form class="col inner-addon left-addon">
+                                    <!-- <i class="fa fa-solid fa-magnifying-glass"></i> -->
+                                    <input class="form-control form-control-sm w-100" type="text" placeholder="Search"
+                                        style="border-radius: 5px" />
                                 </form>
                                 <div class="col btn-group btn-group-sm" role="group"
-                                    aria-label="Basic radio toggle button group">
+                                    aria-label="Basic radio toggle button group" style="border-radius: 5px">
                                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
-                                        autocomplete="off" checked>
+                                        autocomplete="off" checked />
                                     <label class="btn btn-outline-danger" for="btnradio1">Parks</label>
                                     <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
-                                        autocomplete="off">
+                                        autocomplete="off" />
                                     <label class="btn btn-outline-danger" for="btnradio2">Location</label>
                                     <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
-                                        autocomplete="off">
+                                        autocomplete="off" />
                                     <label class="btn btn-outline-danger" for="btnradio3">Devices</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body" style="padding: 0px;margin: 0px;">
+                        <div class="card-body" style="padding: 0px; margin: 0px">
                             <!-- <div class="card mt-1"> -->
-                                <!-- <div class="card-body"> -->
-                                    <div class="row row shadow-lg p-1 mb-1 bg-white float-center w-100 ms-1">
-                                        <img class="col" width="20px" height="25px" src="/assets/Vector (12).svg" alt=""
-                                            style="padding-left: 0px;padding-right: 0px;">
-                                        <span class="col"
-                                            style="font-size: 11px;font-weight: bold;">Irungatukottai</span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="assets/la_industry.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Industries
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Storages
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Flow Meters
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Level Meters
-                                        </span>
-                                        <span class="col ps-5" style="margin: 0px;padding: 0px;">
-                                            <i class="fa fa-solid fa-angle-right"></i>
-                                        </span>
-                                    </div>
-                                <!-- </div>
+                            <!-- <div class="card-body"> -->
+                            <div class="row row shadow-lg p-1 mb-1 mt-2 bg-white float-center ms-1"
+                                style="width: 579px; height: 47px">
+                                <img class="col" width="20px" height="25px" src="/assets/Vector (12).svg" alt=""
+                                    style="padding-left: 0px; padding-right: 0px" />
+                                <span class="col" style="font-size: 11px; font-weight: bold">Irungatukottai</span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="assets/la_industry.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 2</span><br />Industries
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 2</span><br />Storages
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 1</span><br />Flow Meters
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 1</span><br />Level Meters
+                                </span>
+                                <span class="col ps-5" style="margin: 0px; padding: 0px">
+                                    <i class="fa fa-solid fa-angle-right"></i>
+                                </span>
+                            </div>
+                            <!-- </div>
                             </div> -->
                             <!-- <div class="card mt-1">
                                 <div > -->
-                                    <div class="row row shadow-lg p-1 mb-1 bg-white float-center w-100 ms-1">
-                                        <img class="col" width="20px" height="25px" src="/assets/Vector (10).svg" alt=""
-                                            style="padding-left: 0px;padding-right: 0px;">
-                                        <span class="col" style="font-size: 11px;font-weight: bold;">Perundurai</span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="assets/la_industry.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Industries
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Storages
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Flow Meters
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Level Meters
-                                        </span>
-                                        <span class="col ps-5" style="margin: 0px;padding: 0px;">
-                                            <i class="fa fa-solid fa-angle-right"></i>
-                                        </span>
-                                    </div>
-                                <!-- </div>
+                            <div class="row row shadow-lg p-1 mb-1 bg-white float-center ms-1"
+                                style="width: 579px; height: 47px">
+                                <img class="col" width="20px" height="25px" src="/assets/Vector (10).svg" alt=""
+                                    style="padding-left: 0px; padding-right: 0px" />
+                                <span class="col" style="font-size: 11px; font-weight: bold">Perundurai</span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="assets/la_industry.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 4</span><br />Industries
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 6</span><br />Storages
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 1</span><br />Flow Meters
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 1</span><br />Level Meters
+                                </span>
+                                <span class="col ps-5" style="margin: 0px; padding: 0px">
+                                    <i class="fa fa-solid fa-angle-right"></i>
+                                </span>
+                            </div>
+                            <!-- </div>
                             </div> -->
                             <!-- <div class="card mt-1">
                                 <div class="card-body"> -->
-                                    <div class="row shadow-lg p-1 mb-1 bg-white float-center w-100 ms-1">
-                                        <img class="col" width="20px" height="25px" src="/assets/Vector (11).svg" alt=""
-                                            style="padding-left: 0px;padding-right: 0px;">
-                                        <span class="col" style="font-size: 11px;font-weight: bold;">Tamil Nadu</span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="assets/la_industry.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Industries
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Storages
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Flow Meters
-                                        </span>
-                                        <span class="col" style="font-size: 9px;">
-                                            <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png"
-                                                alt=""><span style="color: red;font-weight: bold;"> 2</span><br>Level Meters
-                                        </span>
-                                        <span class="col ps-5" style="margin: 0px;padding: 0px;">
-                                            <i class="fa fa-solid fa-angle-right"></i>
-                                        </span>
-                                    </div>
-                                <!-- </div>
-                            </div> -->
-                            <div class="d-flex justify-content-center">
-                                <button type="button" style="font-size: 11px;width: 120px;"
-                                    class="btn btn-outline-danger rounded-pill mt-2">See All</button>
+                            <div class="row shadow-md p-1 mb-1 bg-white float-center ms-1"
+                                style="width: 579px; height: 47px">
+                                <img class="col" width="20px" height="25px" src="/assets/Vector (11).svg" alt=""
+                                    style="padding-left: 0px; padding-right: 0px" />
+                                <span class="col" style="font-size: 11px; font-weight: bold">Tamil Nadu</span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="assets/la_industry.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 3</span><br />Industries
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets/carbon_block-storage-alt.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 2</span><br />Storages
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets/mdi_altimeter.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 1</span><br />Flow Meters
+                                </span>
+                                <span class="col" style="font-size: 9px">
+                                    <img class="col w-25 h-25" src="/assets//mdi_hydraulic-oil-level.png" alt="" /><span
+                                        style="color: red; font-weight: bold"> 1</span><br />Level Meters
+                                </span>
+                                <span class="col ps-5" style="margin: 0px; padding: 0px">
+                                    <i class="fa fa-solid fa-angle-right"></i>
+                                </span>
                             </div>
-
+                            <!-- </div>
+                            </div> -->
+                            <div class="d-flex justify-content-center m-1">
+                                <button type="button" style="font-size: 11px; width: 120px"
+                                    class="btn btn-outline-danger rounded-pill">
+                                    See All
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="container-fluid col-lg-12 col-md-6 col-sm-12 float-start" style="width:374px;">
-                        <img src="assets/Level Map.svg" width="374px">
+                    <div class="container-fluid col-lg-12 col-md-6 col-sm-12 float-start"
+                        style="width: 360px; border-radius: 10px">
+                        <img src="assets/Level Map.svg" width="403px" />
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
